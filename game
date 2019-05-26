@@ -1,0 +1,1308 @@
+#include<stdio.h> 
+#include<stdlib.h>
+#include<string.h>
+#include <time.h>
+int q[4];  //把出好的題目放在這裡，需四個位置
+char a[500];  //放讓使用者輸入的數字 
+int a_int[4];  //把使用者輸入的字串轉成數字後放在這四個位置 
+int ifclear = 0;  //當布林值用，表示過關與否，一開始當然沒過關，所以是0 
+int tocontinue = 1;  //當布林值用，表示要繼續遊戲與否 
+int k=0; 
+
+int toquit = 0;  //當布林值用，表示要跳出遊戲與否 
+int toquit2 = 0;
+int toquit3 = 0;
+int toquit4 = 0;
+int toquit5 = 0;
+int toquit6 = 0;  //當布林值用，表示要跳出遊戲與否 
+int toquit7 = 0;
+int toquit8 = 0;
+int toquit9 = 0;
+int toquit10 = 0;
+
+void makeQ1(void);  //出題 
+
+void getA();  
+void getA2();
+void getA3();  
+void getA4();
+void getA5();  
+void getA6();  
+void getA7();
+void getA8();  
+void getA9();
+void getA10();  
+
+void outcome(void);  
+void outcome2(void);
+void outcome3(void);  
+void outcome4(void);
+void outcome5(void);  
+void outcome6(void);  
+void outcome7(void);
+void outcome8(void);  
+void outcome9(void);
+void outcome10(void);  
+
+void intro1(void);  
+void intro2(void);
+void intro3(void);  
+void intro4(void);
+void intro5(void);  
+void intro6(void);  
+void intro7(void);
+void intro8(void);  
+void intro9(void);
+void intro10(void);  
+
+void level1(void); 
+void level2(void);
+void level3(void); 
+void level4(void);
+void level5(void); 
+void level6(void);
+void level7(void);
+void level8(void);
+void level9(void);
+void level10(void);
+
+int main(void){  
+
+	intro1();  
+    level1();
+    printf("\n");
+		
+	do
+	{
+	toquit2=0;
+	tocontinue=0;
+	k=0;
+	intro2();
+    level2();
+    printf("\n");
+	}	while(!ifclear)	;
+
+	
+	do
+	{
+	toquit3=0;
+	tocontinue=0;
+	k=0;
+	intro3();
+    level3();
+    printf("\n");
+	}	while(!ifclear)	;
+
+	
+	do
+	{
+	toquit4=0;
+	tocontinue=0;
+	k=0;
+	intro4();
+    level4();
+    printf("\n");
+	}	while(!ifclear)	;
+
+	
+	do
+	{
+	toquit5=0;
+	tocontinue=0;
+	k=0;
+	intro5();
+    level5();
+    printf("\n");
+	}	while(!ifclear)	;
+	
+		
+	do
+	{
+	toquit6=0;
+	tocontinue=0;
+	k=0;
+	intro6();
+    level6();
+    printf("\n");
+	}	while(!ifclear)	;	
+	
+
+	do
+	{
+	toquit7=0;
+	tocontinue=0;
+	k=0;
+	intro7();
+    level7();
+    printf("\n");
+	} while(!ifclear)	;
+		
+	
+	do
+	{
+	toquit8=0;
+	tocontinue=0;
+	k=0;
+	intro8();
+    level8();
+    printf("\n");
+	}	while(!ifclear)	;	
+
+	
+	do
+	{
+	toquit9=0;
+	tocontinue=0;
+	k=0;
+	intro9();
+    level9();
+    printf("\n");
+	}	while(!ifclear)	;
+		
+	do
+	{
+	toquit10=0;
+	tocontinue=0;
+	k=0;
+	intro10();
+    level10();
+    printf("\n");
+	}	while(!ifclear)	;
+		
+   system("pause");
+   return 0;
+}
+
+void level1(void)
+{
+		
+        ifclear =0;
+        tocontinue = 1;
+        makeQ1();  
+        while(tocontinue){
+            getA();
+        
+        if(toquit) break;
+    } 
+	
+}
+void level2(void)
+{
+		k=0;
+	    ifclear =0;
+        tocontinue = 1;
+        makeQ1();  
+        while(tocontinue){
+           // k++;
+			getA2();
+        
+       if(toquit2 ) break;
+}
+}
+void level3(void)
+{
+		k=0;
+		ifclear =0;
+        tocontinue = 1;
+        makeQ1();  
+        while(tocontinue){
+            
+			getA3();
+			if(toquit3 ) break;
+        }
+ } 
+void level4(void)
+{
+		k=0;
+		ifclear =0;
+        tocontinue = 1;
+        makeQ1();  
+        while(tocontinue){
+            
+			getA4();
+			if(toquit4 ) break;
+        }
+}
+void level5(void)
+{
+		k=0;
+		ifclear =0;
+        tocontinue = 1;
+        makeQ1();  
+        while(tocontinue){
+            
+			getA5();
+			if(toquit5) break;
+        }
+}
+void level6(void)
+{
+		k=0;
+	    ifclear =0;
+        tocontinue = 1;
+        makeQ1();  
+        while(tocontinue){
+            
+			getA6();
+        
+       if(toquit6) break;
+}
+}
+void level7(void)
+{
+		k=0;
+		ifclear =0;
+        tocontinue = 1;
+        makeQ1();  
+        while(tocontinue){
+            
+			getA7();
+			if(toquit7) break;
+        }
+ } 
+void level8(void)
+{
+		k=0;
+		ifclear =0;
+        tocontinue = 1;
+        makeQ1();  
+        while(tocontinue){
+    
+			getA8();
+			if(toquit8) break;
+        }
+}
+void level9(void)
+{
+		k=0;
+		ifclear =0;
+        tocontinue = 1;
+        makeQ1();  
+        while(tocontinue){
+            
+			getA9();
+			if(toquit9) break;
+        }
+}
+void level10(void)
+{
+		k=0;
+		ifclear =0;
+        tocontinue = 1;
+        makeQ1();  
+        while(tocontinue){
+            
+			getA10();
+			if(toquit10) break;
+        }
+}
+
+void intro1(void)
+{
+    printf("  猜數字遊戲  \n");
+	printf("  第一關\n") ;  
+    printf("  遊戲規則：                                   \n");
+    printf("  1.輸入4個不重複的數字                        \n");
+    printf("  2.出現A的次數代表你猜對了幾個數字且位置正確  \n");
+    printf("  3.出現B的次數代表你猜對了幾個數字但位置不對  \n");
+    printf("  4.也就是說當4A0B的時候，就是你過關的時候     \n");
+  
+    
+}
+void intro2(void)
+{
+	printf("  第二關") ;  
+    printf("  遊戲規則：                                   \n");
+    printf("  1.次數限制為50次\n");
+	printf("  2.輸入4個不重複的數字                        \n");
+    printf("  3.出現A的次數代表你猜對了幾個數字且位置正確  \n");
+    printf("  4.出現B的次數代表你猜對了幾個數字但位置不對  \n");
+    printf("  5.也就是說當4A0B的時候，就是你過關的時候     \n");
+    
+}
+void intro3(void)
+{
+	printf("  第三關") ;  
+    printf("  遊戲規則：                                   \n");
+    printf("  1.次數限制為45次\n");
+	printf("  2.輸入4個不重複的數字                        \n");
+    printf("  3.出現A的次數代表你猜對了幾個數字且位置正確  \n");
+    printf("  4.出現B的次數代表你猜對了幾個數字但位置不對  \n");
+    printf("  5.也就是說當4A0B的時候，就是你過關的時候     \n");
+ } 
+void intro4(void)
+{
+	printf("  第四關") ;  
+    printf("  遊戲規則：                                   \n");
+    printf("  1.次數限制為40次\n");
+	printf("  2.輸入4個不重複的數字                        \n");
+    printf("  3.出現A的次數代表你猜對了幾個數字且位置正確  \n");
+    printf("  4.出現B的次數代表你猜對了幾個數字但位置不對  \n");
+    printf("  5.也就是說當4A0B的時候，就是你過關的時候     \n");
+ } 
+void intro5(void)
+{
+	printf("  第五關") ;  
+    printf("  遊戲規則：                                   \n");
+    printf("  1.次數限制為35次\n");
+	printf("  2.輸入4個不重複的數字                        \n");
+    printf("  3.出現A的次數代表你猜對了幾個數字且位置正確  \n");
+    printf("  4.出現B的次數代表你猜對了幾個數字但位置不對  \n");
+    printf("  5.也就是說當4A0B的時候，就是你過關的時候     \n");
+} 
+void intro6(void)
+{
+	
+	printf("  第六關\n") ;  
+    printf("  遊戲規則：                                   \n");
+    printf("  1.次數限制為30次\n");
+    printf("  2.輸入4個不重複的數字                        \n");
+    printf("  3.出現A的次數代表你猜對了幾個數字且位置正確  \n");
+    printf("  4.出現B的次數代表你猜對了幾個數字但位置不對  \n");
+    printf("  5.也就是說當4A0B的時候，就是你過關的時候     \n");
+}
+void intro7(void)
+{
+	printf("  第七關") ;  
+    printf("  遊戲規則：                                   \n");
+    printf("  1.次數限制為25次\n");
+	printf("  2.輸入4個不重複的數字                        \n");
+    printf("  3.出現A的次數代表你猜對了幾個數字且位置正確  \n");
+    printf("  4.出現B的次數代表你猜對了幾個數字但位置不對  \n");
+    printf("  5.也就是說當4A0B的時候，就是你過關的時候     \n");
+ } 
+void intro8(void)
+{
+	printf("  第八關") ;  
+    printf("  遊戲規則：                                   \n");
+    printf("  1.次數限制為20次\n");
+	printf("  2.輸入4個不重複的數字                        \n");
+    printf("  3.出現A的次數代表你猜對了幾個數字且位置正確  \n");
+    printf("  4.出現B的次數代表你猜對了幾個數字但位置不對  \n");
+    printf("  5.也就是說當4A0B的時候，就是你過關的時候     \n");
+}
+void intro9(void)
+{
+	printf("  第九關") ;  
+    printf("  遊戲規則：                                   \n");
+    printf("  1.次數限制為15次\n");
+	printf("  2.輸入4個不重複的數字                        \n");
+    printf("  3.出現A的次數代表你猜對了幾個數字且位置正確  \n");
+    printf("  4.出現B的次數代表你猜對了幾個數字但位置不對  \n");
+    printf("  5.也就是說當4A0B的時候，就是你過關的時候     \n");
+}
+void intro10(void)
+{
+	printf("  第十關") ;  
+    printf("  遊戲規則：                                   \n");
+    printf("  1.次數限制為10次\n");
+	printf("  2.輸入4個不重複的數字                        \n");
+    printf("  3.出現A的次數代表你猜對了幾個數字且位置正確  \n");
+    printf("  4.出現B的次數代表你猜對了幾個數字但位置不對  \n");
+    printf("  5.也就是說當4A0B的時候，就是你過關的時候     \n");
+ } 
+
+void makeQ1(void)
+{
+    int i,j;
+    srand(time(NULL));
+    for(i=0;i<4;i++){
+        *(q+i) = rand()%5;
+        for(j=0;j<i;j++){
+            while(*(q+i) == *(q+j)){  //這個while是用來當數字重複出現時讓就再一次取亂數
+                *(q+i) =5+ rand()%5;
+            }
+        }
+     
+    }
+}
+
+void getA()
+{
+    printf("\n請輸入: ");
+    int i,j;  //迴圈專用 
+    int boolin = 1;  //用來表示使用者是否正常輸入
+    
+    fgets(a,sizeof(a),stdin);
+    *(a+strlen(a)-1)= '\0'; 
+    //因為fget只要成功讀取，會自動在'\0'前面加上'\n'，所以要把'\n'變成'\0'，不然結果會不如預期地多出1
+    
+    if(*(a) == 'm' && strlen(a) == 1){  //只要使用者一輸入m就立即叫出選單 
+       // menu();
+    }else if(*a == '7' && *(a+1) == '8' && *(a+2) == '1' && *(a+3) == '1' && *(a+4) == '2' && *(a+5) == '3' && strlen(a) == 6){
+        printf("大兜偷偷告訴你...答案是："); 
+        for(i=0;i<4;i++){
+            printf("%d",*(q+i));
+        }
+        printf("\n");
+    }else{ 
+        
+        if(!(strlen(a)==4)){  //判斷使用者是否輸入了四個字元 
+            boolin *=0;  //表示使用者不正常輸入 
+            printf("請不要輸入太多或太少\n");
+        }
+        for(i=0;i<strlen(a);i++){  //判斷讓使用者是否輸入0到9 
+            if(!(*(a+i) >= '0' && *(a+i) <= '9')){
+                boolin *= 0;
+                printf("請輸入數字0~9\n");
+                break;
+            }
+        }
+    
+        for(i=0;i<4;i++){  //判斷使用者是否輸入重複數字 
+            for(j=0;j<i;j++){
+                while(*(a+i) == *(a+j)){  //這裡和上述出題用的是一樣的原理 
+                    printf("請不要輸入重複的數字\n");
+                    boolin *= 0;
+                    break;
+                }
+                if(!boolin) break;
+            }
+            if(!boolin) break;
+        }
+    
+        if(boolin){  //boolin如果等於1，也就是使用者正常輸入，才開始把字串轉成數字 
+            for(i=0;i<4;i++){
+                *(a_int+i) = *(a+i) - '0'; 
+            }
+            
+            outcome();  //轉成數字後呼叫outcome看看結果為幾A幾B
+        }
+    }   
+}
+void getA2()
+{
+    printf("\n請輸入: ");
+    int i,j;  //迴圈專用 
+    int boolin = 1;  //用來表示使用者是否正常輸入
+    
+    fgets(a,sizeof(a),stdin);
+    *(a+strlen(a)-1)= '\0'; 
+    //因為fget只要成功讀取，會自動在'\0'前面加上'\n'，所以要把'\n'變成'\0'，不然結果會不如預期地多出1
+    
+    if(*(a) == 'm' && strlen(a) == 1){  //只要使用者一輸入m就立即叫出選單 
+       // menu();
+    }else if(*a == '7' && *(a+1) == '8' && *(a+2) == '1' && *(a+3) == '1' && *(a+4) == '2' && *(a+5) == '3' && strlen(a) == 6){
+        printf("大兜偷偷告訴你...答案是："); 
+        for(i=0;i<4;i++){
+            printf("%d",*(q+i));
+        }
+        printf("\n");
+    }else{ 
+        
+        if(!(strlen(a)==4)){  //判斷使用者是否輸入了四個字元 
+            boolin *=0;  //表示使用者不正常輸入 
+            printf("請不要輸入太多或太少\n");
+        }
+        for(i=0;i<strlen(a);i++){  //判斷讓使用者是否輸入0到9 
+            if(!(*(a+i) >= '0' && *(a+i) <= '9')){
+                boolin *= 0;
+                printf("請輸入數字0~9\n");
+                break;
+            }
+        }
+    
+        for(i=0;i<4;i++){  //判斷使用者是否輸入重複數字 
+            for(j=0;j<i;j++){
+                while(*(a+i) == *(a+j)){  //這裡和上述出題用的是一樣的原理 
+                    printf("請不要輸入重複的數字\n");
+                    boolin *= 0;
+                    break;
+                }
+                if(!boolin) break;
+            }
+            if(!boolin) break;
+        }
+    
+        if(boolin){  //boolin如果等於1，也就是使用者正常輸入，才開始把字串轉成數字 
+            for(i=0;i<4;i++){
+                *(a_int+i) = *(a+i) - '0'; 
+            }
+            k++;
+            outcome2();  //轉成數字後呼叫outcome看看結果為幾A幾B
+        }
+    }   
+}
+void getA3()
+{
+    printf("\n請輸入: ");
+    int i,j;  //迴圈專用 
+    int boolin = 1;  //用來表示使用者是否正常輸入
+    
+    fgets(a,sizeof(a),stdin);
+    *(a+strlen(a)-1)= '\0'; 
+    //因為fget只要成功讀取，會自動在'\0'前面加上'\n'，所以要把'\n'變成'\0'，不然結果會不如預期地多出1
+    
+    if(*(a) == 'm' && strlen(a) == 1){  //只要使用者一輸入m就立即叫出選單 
+       // menu();
+    }else if(*a == '7' && *(a+1) == '8' && *(a+2) == '1' && *(a+3) == '1' && *(a+4) == '2' && *(a+5) == '3' && strlen(a) == 6){
+        printf("大兜偷偷告訴你...答案是："); 
+        for(i=0;i<4;i++){
+            printf("%d",*(q+i));
+        }
+        printf("\n");
+    }else{ 
+        
+        if(!(strlen(a)==4)){  //判斷使用者是否輸入了四個字元 
+            boolin *=0;  //表示使用者不正常輸入 
+            printf("請不要輸入太多或太少\n");
+        }
+        for(i=0;i<strlen(a);i++){  //判斷讓使用者是否輸入0到9 
+            if(!(*(a+i) >= '0' && *(a+i) <= '9')){
+                boolin *= 0;
+                printf("請輸入數字0~9\n");
+                break;
+            }
+        }
+    
+        for(i=0;i<4;i++){  //判斷使用者是否輸入重複數字 
+            for(j=0;j<i;j++){
+                while(*(a+i) == *(a+j)){  //這裡和上述出題用的是一樣的原理 
+                    printf("請不要輸入重複的數字\n");
+                    boolin *= 0;
+                    break;
+                }
+                if(!boolin) break;
+            }
+            if(!boolin) break;
+        }
+    
+        if(boolin){  //boolin如果等於1，也就是使用者正常輸入，才開始把字串轉成數字 
+            for(i=0;i<4;i++){
+                *(a_int+i) = *(a+i) - '0'; 
+            }k++;
+            outcome3();  //轉成數字後呼叫outcome看看結果為幾A幾B
+        }
+    }   
+}
+void getA4()
+{
+    printf("\n請輸入: ");
+    int i,j;  //迴圈專用 
+    int boolin = 1;  //用來表示使用者是否正常輸入
+    
+    fgets(a,sizeof(a),stdin);
+    *(a+strlen(a)-1)= '\0'; 
+    //因為fget只要成功讀取，會自動在'\0'前面加上'\n'，所以要把'\n'變成'\0'，不然結果會不如預期地多出1
+    
+    if(*(a) == 'm' && strlen(a) == 1){  //只要使用者一輸入m就立即叫出選單 
+       // menu();
+    }else if(*a == '7' && *(a+1) == '8' && *(a+2) == '1' && *(a+3) == '1' && *(a+4) == '2' && *(a+5) == '3' && strlen(a) == 6){
+        printf("大兜偷偷告訴你...答案是："); 
+        for(i=0;i<4;i++){
+            printf("%d",*(q+i));
+        }
+        printf("\n");
+    }else{ 
+        
+        if(!(strlen(a)==4)){  //判斷使用者是否輸入了四個字元 
+            boolin *=0;  //表示使用者不正常輸入 
+            printf("請不要輸入太多或太少\n");
+        }
+        for(i=0;i<strlen(a);i++){  //判斷讓使用者是否輸入0到9 
+            if(!(*(a+i) >= '0' && *(a+i) <= '9')){
+                boolin *= 0;
+                printf("請輸入數字0~9\n");
+                break;
+            }
+        }
+    
+        for(i=0;i<4;i++){  //判斷使用者是否輸入重複數字 
+            for(j=0;j<i;j++){
+                while(*(a+i) == *(a+j)){  //這裡和上述出題用的是一樣的原理 
+                    printf("請不要輸入重複的數字\n");
+                    boolin *= 0;
+                    break;
+                }
+                if(!boolin) break;
+            }
+            if(!boolin) break;
+        }
+    
+        if(boolin){  //boolin如果等於1，也就是使用者正常輸入，才開始把字串轉成數字 
+            for(i=0;i<4;i++){
+                *(a_int+i) = *(a+i) - '0'; 
+            }k++;
+            outcome4();  //轉成數字後呼叫outcome看看結果為幾A幾B
+        }
+    }   
+}
+void getA5()
+{
+    printf("\n請輸入: ");
+    int i,j;  //迴圈專用 
+    int boolin = 1;  //用來表示使用者是否正常輸入
+    
+    fgets(a,sizeof(a),stdin);
+    *(a+strlen(a)-1)= '\0'; 
+    //因為fget只要成功讀取，會自動在'\0'前面加上'\n'，所以要把'\n'變成'\0'，不然結果會不如預期地多出1
+    
+    if(*(a) == 'm' && strlen(a) == 1){  //只要使用者一輸入m就立即叫出選單 
+       // menu();
+    }else if(*a == '7' && *(a+1) == '8' && *(a+2) == '1' && *(a+3) == '1' && *(a+4) == '2' && *(a+5) == '3' && strlen(a) == 6){
+        printf("大兜偷偷告訴你...答案是："); 
+        for(i=0;i<4;i++){
+            printf("%d",*(q+i));
+        }
+        printf("\n");
+    }else{ 
+        
+        if(!(strlen(a)==4)){  //判斷使用者是否輸入了四個字元 
+            boolin *=0;  //表示使用者不正常輸入 
+            printf("請不要輸入太多或太少\n");
+        }
+        for(i=0;i<strlen(a);i++){  //判斷讓使用者是否輸入0到9 
+            if(!(*(a+i) >= '0' && *(a+i) <= '9')){
+                boolin *= 0;
+                printf("請輸入數字0~9\n");
+                break;
+            }
+        }
+    
+        for(i=0;i<4;i++){  //判斷使用者是否輸入重複數字 
+            for(j=0;j<i;j++){
+                while(*(a+i) == *(a+j)){  //這裡和上述出題用的是一樣的原理 
+                    printf("請不要輸入重複的數字\n");
+                    boolin *= 0;
+                    break;
+                }
+                if(!boolin) break;
+            }
+            if(!boolin) break;
+        }
+    
+        if(boolin){  //boolin如果等於1，也就是使用者正常輸入，才開始把字串轉成數字 
+            for(i=0;i<4;i++){
+                *(a_int+i) = *(a+i) - '0'; 
+            }k++;
+            outcome5();  //轉成數字後呼叫outcome看看結果為幾A幾B
+        }
+    }   
+}
+void getA6()
+{
+    printf("\n請輸入: ");
+    int i,j;  //迴圈專用 
+    int boolin = 1;  //用來表示使用者是否正常輸入
+    
+    fgets(a,sizeof(a),stdin);
+    *(a+strlen(a)-1)= '\0'; 
+    //因為fget只要成功讀取，會自動在'\0'前面加上'\n'，所以要把'\n'變成'\0'，不然結果會不如預期地多出1
+    
+    if(*(a) == 'm' && strlen(a) == 1){  //只要使用者一輸入m就立即叫出選單 
+       // menu();
+    }else if(*a == '7' && *(a+1) == '8' && *(a+2) == '1' && *(a+3) == '1' && *(a+4) == '2' && *(a+5) == '3' && strlen(a) == 6){
+        printf("大兜偷偷告訴你...答案是："); 
+        for(i=0;i<4;i++){
+            printf("%d",*(q+i));
+        }
+        printf("\n");
+    }else{ 
+        
+        if(!(strlen(a)==4)){  //判斷使用者是否輸入了四個字元 
+            boolin *=0;  //表示使用者不正常輸入 
+            printf("請不要輸入太多或太少\n");
+        }
+        for(i=0;i<strlen(a);i++){  //判斷讓使用者是否輸入0到9 
+            if(!(*(a+i) >= '0' && *(a+i) <= '9')){
+                boolin *= 0;
+                printf("請輸入數字0~9\n");
+                break;
+            }
+        }
+    
+        for(i=0;i<4;i++){  //判斷使用者是否輸入重複數字 
+            for(j=0;j<i;j++){
+                while(*(a+i) == *(a+j)){  //這裡和上述出題用的是一樣的原理 
+                    printf("請不要輸入重複的數字\n");
+                    boolin *= 0;
+                    break;
+                }
+                if(!boolin) break;
+            }
+            if(!boolin) break;
+        }
+    
+        if(boolin){  //boolin如果等於1，也就是使用者正常輸入，才開始把字串轉成數字 
+            for(i=0;i<4;i++){
+                *(a_int+i) = *(a+i) - '0'; 
+            }k++;
+            outcome6();  //轉成數字後呼叫outcome看看結果為幾A幾B
+        }
+    }   
+}
+void getA7()
+{
+    printf("\n請輸入: ");
+    int i,j;  //迴圈專用 
+    int boolin = 1;  //用來表示使用者是否正常輸入
+    
+    fgets(a,sizeof(a),stdin);
+    *(a+strlen(a)-1)= '\0'; 
+    //因為fget只要成功讀取，會自動在'\0'前面加上'\n'，所以要把'\n'變成'\0'，不然結果會不如預期地多出1
+    
+    if(*(a) == 'm' && strlen(a) == 1){  //只要使用者一輸入m就立即叫出選單 
+       // menu();
+    }else if(*a == '7' && *(a+1) == '8' && *(a+2) == '1' && *(a+3) == '1' && *(a+4) == '2' && *(a+5) == '3' && strlen(a) == 6){
+        printf("大兜偷偷告訴你...答案是："); 
+        for(i=0;i<4;i++){
+            printf("%d",*(q+i));
+        }
+        printf("\n");
+    }else{ 
+        
+        if(!(strlen(a)==4)){  //判斷使用者是否輸入了四個字元 
+            boolin *=0;  //表示使用者不正常輸入 
+            printf("請不要輸入太多或太少\n");
+        }
+        for(i=0;i<strlen(a);i++){  //判斷讓使用者是否輸入0到9 
+            if(!(*(a+i) >= '0' && *(a+i) <= '9')){
+                boolin *= 0;
+                printf("請輸入數字0~9\n");
+                break;
+            }
+        }
+    
+        for(i=0;i<4;i++){  //判斷使用者是否輸入重複數字 
+            for(j=0;j<i;j++){
+                while(*(a+i) == *(a+j)){  //這裡和上述出題用的是一樣的原理 
+                    printf("請不要輸入重複的數字\n");
+                    boolin *= 0;
+                    break;
+                }
+                if(!boolin) break;
+            }
+            if(!boolin) break;
+        }
+    
+        if(boolin){  //boolin如果等於1，也就是使用者正常輸入，才開始把字串轉成數字 
+            for(i=0;i<4;i++){
+                *(a_int+i) = *(a+i) - '0'; 
+            }k++;
+            outcome7();  //轉成數字後呼叫outcome看看結果為幾A幾B
+        }
+    }   
+}
+void getA8()
+{
+    printf("\n請輸入: ");
+    int i,j;  //迴圈專用 
+    int boolin = 1;  //用來表示使用者是否正常輸入
+    
+    fgets(a,sizeof(a),stdin);
+    *(a+strlen(a)-1)= '\0'; 
+    //因為fget只要成功讀取，會自動在'\0'前面加上'\n'，所以要把'\n'變成'\0'，不然結果會不如預期地多出1
+    
+    if(*(a) == 'm' && strlen(a) == 1){  //只要使用者一輸入m就立即叫出選單 
+       // menu();
+    }else if(*a == '7' && *(a+1) == '8' && *(a+2) == '1' && *(a+3) == '1' && *(a+4) == '2' && *(a+5) == '3' && strlen(a) == 6){
+        printf("大兜偷偷告訴你...答案是："); 
+        for(i=0;i<4;i++){
+            printf("%d",*(q+i));
+        }
+        printf("\n");
+    }else{ 
+        
+        if(!(strlen(a)==4)){  //判斷使用者是否輸入了四個字元 
+            boolin *=0;  //表示使用者不正常輸入 
+            printf("請不要輸入太多或太少\n");
+        }
+        for(i=0;i<strlen(a);i++){  //判斷讓使用者是否輸入0到9 
+            if(!(*(a+i) >= '0' && *(a+i) <= '9')){
+                boolin *= 0;
+                printf("請輸入數字0~9\n");
+                break;
+            }
+        }
+    
+        for(i=0;i<4;i++){  //判斷使用者是否輸入重複數字 
+            for(j=0;j<i;j++){
+                while(*(a+i) == *(a+j)){  //這裡和上述出題用的是一樣的原理 
+                    printf("請不要輸入重複的數字\n");
+                    boolin *= 0;
+                    break;
+                }
+                if(!boolin) break;
+            }
+            if(!boolin) break;
+        }
+    
+        if(boolin){  //boolin如果等於1，也就是使用者正常輸入，才開始把字串轉成數字 
+            for(i=0;i<4;i++){
+                *(a_int+i) = *(a+i) - '0'; 
+            }k++;
+            outcome8();  //轉成數字後呼叫outcome看看結果為幾A幾B
+        }
+    }   
+}
+void getA9()
+{
+    printf("\n請輸入: ");
+    int i,j;  //迴圈專用 
+    int boolin = 1;  //用來表示使用者是否正常輸入
+    
+    fgets(a,sizeof(a),stdin);
+    *(a+strlen(a)-1)= '\0'; 
+    //因為fget只要成功讀取，會自動在'\0'前面加上'\n'，所以要把'\n'變成'\0'，不然結果會不如預期地多出1
+    
+    if(*(a) == 'm' && strlen(a) == 1){  //只要使用者一輸入m就立即叫出選單 
+       // menu();
+    }else if(*a == '7' && *(a+1) == '8' && *(a+2) == '1' && *(a+3) == '1' && *(a+4) == '2' && *(a+5) == '3' && strlen(a) == 6){
+        printf("大兜偷偷告訴你...答案是："); 
+        for(i=0;i<4;i++){
+            printf("%d",*(q+i));
+        }
+        printf("\n");
+    }else{ 
+        
+        if(!(strlen(a)==4)){  //判斷使用者是否輸入了四個字元 
+            boolin *=0;  //表示使用者不正常輸入 
+            printf("請不要輸入太多或太少\n");
+        }
+        for(i=0;i<strlen(a);i++){  //判斷讓使用者是否輸入0到9 
+            if(!(*(a+i) >= '0' && *(a+i) <= '9')){
+                boolin *= 0;
+                printf("請輸入數字0~9\n");
+                break;
+            }
+        }
+    
+        for(i=0;i<4;i++){  //判斷使用者是否輸入重複數字 
+            for(j=0;j<i;j++){
+                while(*(a+i) == *(a+j)){  //這裡和上述出題用的是一樣的原理 
+                    printf("請不要輸入重複的數字\n");
+                    boolin *= 0;
+                    break;
+                }
+                if(!boolin) break;
+            }
+            if(!boolin) break;
+        }
+    
+        if(boolin){  //boolin如果等於1，也就是使用者正常輸入，才開始把字串轉成數字 
+            for(i=0;i<4;i++){
+                *(a_int+i) = *(a+i) - '0'; 
+            }k++;
+            outcome9();  //轉成數字後呼叫outcome看看結果為幾A幾B
+        }
+    }   
+}
+void getA10()
+{
+    printf("\n請輸入: ");
+    int i,j;  //迴圈專用 
+    int boolin = 1;  //用來表示使用者是否正常輸入
+    
+    fgets(a,sizeof(a),stdin);
+    *(a+strlen(a)-1)= '\0'; 
+    //因為fget只要成功讀取，會自動在'\0'前面加上'\n'，所以要把'\n'變成'\0'，不然結果會不如預期地多出1
+    
+    if(*(a) == 'm' && strlen(a) == 1){  //只要使用者一輸入m就立即叫出選單 
+       // menu();
+    }else if(*a == '7' && *(a+1) == '8' && *(a+2) == '1' && *(a+3) == '1' && *(a+4) == '2' && *(a+5) == '3' && strlen(a) == 6){
+        printf("大兜偷偷告訴你...答案是："); 
+        for(i=0;i<4;i++){
+            printf("%d",*(q+i));
+        }
+        printf("\n");
+    }else{ 
+        
+        if(!(strlen(a)==4)){  //判斷使用者是否輸入了四個字元 
+            boolin *=0;  //表示使用者不正常輸入 
+            printf("請不要輸入太多或太少\n");
+        }
+        for(i=0;i<strlen(a);i++){  //判斷讓使用者是否輸入0到9 
+            if(!(*(a+i) >= '0' && *(a+i) <= '9')){
+                boolin *= 0;
+                printf("請輸入數字0~9\n");
+                break;
+            }
+        }
+    
+        for(i=0;i<4;i++){  //判斷使用者是否輸入重複數字 
+            for(j=0;j<i;j++){
+                while(*(a+i) == *(a+j)){  //這裡和上述出題用的是一樣的原理 
+                    printf("請不要輸入重複的數字\n");
+                    boolin *= 0;
+                    break;
+                }
+                if(!boolin) break;
+            }
+            if(!boolin) break;
+        }
+    
+        if(boolin){  //boolin如果等於1，也就是使用者正常輸入，才開始把字串轉成數字 
+            for(i=0;i<4;i++){
+                *(a_int+i) = *(a+i) - '0'; 
+            }k++;
+            outcome10();  //轉成數字後呼叫outcome看看結果為幾A幾B
+        }
+    }   
+}
+
+void outcome(void)
+{
+    int a=0;  //幾A的A 
+    int b=0;  //幾B的B 
+    int i,j;  //迴圈專用 
+    for(i=0;i<4;i++){  //使用兩個for，裡面的if作16次 
+        for(j=0;j<4;j++){
+            if(*(a_int+i)==*(q+j)){  //先判斷有沒有遇到相同的數字 
+                if(i==j){  //如果遇到相同的數字，再判斷是不是在相同的位置 
+                    a++;  //相同數字且相同位置，那麼就得到一個A 
+                }else{  //相同數字但沒有想同位置，那麼就得到一個B 
+                    b++;
+                }
+            }
+        }
+    }
+    
+    if(a==4){  //如果有4A代表使用者過關了！
+        printf("恭喜恭喜！你答對了！\n");
+       tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit = 1;
+    }else{
+        printf("%dA%dB\n",a,b);  //沒過關，那就顯示幾A幾B 
+    }
+    
+}
+void outcome2(void)
+{
+    
+	int a=0;  //幾A的A 
+    int b=0;  //幾B的B 
+    int i,j;  //迴圈專用 
+   
+    for(i=0;i<4;i++){  //使用兩個for，裡面的if作16次 
+        for(j=0;j<4;j++){
+            if(*(a_int+i)==*(q+j)){  //先判斷有沒有遇到相同的數字 
+                if(i==j){  //如果遇到相同的數字，再判斷是不是在相同的位置 
+                    a++;  //相同數字且相同位置，那麼就得到一個A 
+                }else{  //相同數字但沒有想同位置，那麼就得到一個B 
+                    b++;
+                }
+            }
+        }
+    }
+    
+    if(a==4){  //如果有4A代表使用者過關了！
+        printf("恭喜恭喜！你答對了！\n");
+        ifclear = 1;  
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit2 = 1;
+		
+    }else{
+        printf("%dA%dB\n",a,b);  //沒過關，那就顯示幾A幾B 
+        printf("剩餘%d次",50-k);
+		if(k==50)
+        {
+		printf("try again!"); 
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit2 = 1;
+         ifclear = 0;
+		}
+    	
+	}
+}
+void outcome3(void)
+{
+	int a=0;  //幾A的A 
+    int b=0;  //幾B的B 
+    int i,j;  //迴圈專用 
+   
+    for(i=0;i<4;i++){  //使用兩個for，裡面的if作16次 
+        for(j=0;j<4;j++){
+            if(*(a_int+i)==*(q+j)){  //先判斷有沒有遇到相同的數字 
+                if(i==j){  //如果遇到相同的數字，再判斷是不是在相同的位置 
+                    a++;  //相同數字且相同位置，那麼就得到一個A 
+                }else{  //相同數字但沒有想同位置，那麼就得到一個B 
+                    b++;
+                }
+            }
+        }
+    }
+    
+    if(a==4){  //如果有4A代表使用者過關了！
+        printf("恭喜恭喜！你答對了！\n");
+
+        ifclear = 1; 
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+            toquit3 = 1;
+    }else{
+        printf("%dA%dB\n",a,b);  //沒過關，那就顯示幾A幾B 
+        printf("剩餘%d次",45-k);
+		if(k==45)
+        {
+		printf("try again!"); 
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+			toquit3 = 1;
+			ifclear = 0;
+		}
+    	}
+	
+}
+void outcome4(void)
+{
+    
+	int a=0;  //幾A的A 
+    int b=0;  //幾B的B 
+    int i,j;  //迴圈專用 
+   
+    for(i=0;i<4;i++){  //使用兩個for，裡面的if作16次 
+        for(j=0;j<4;j++){
+            if(*(a_int+i)==*(q+j)){  //先判斷有沒有遇到相同的數字 
+                if(i==j){  //如果遇到相同的數字，再判斷是不是在相同的位置 
+                    a++;  //相同數字且相同位置，那麼就得到一個A 
+                }else{  //相同數字但沒有想同位置，那麼就得到一個B 
+                    b++;
+                }
+            }
+        }
+    }
+    
+    if(a==4){  //如果有4A代表使用者過關了！
+        printf("恭喜恭喜！你答對了！\n");
+        ifclear = 1;  //因為過關了，所以從0變成1 
+        tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+            toquit4 = 1;
+    }else{
+        printf("%dA%dB\n",a,b);  //沒過關，那就顯示幾A幾B 
+        printf("剩餘%d次",40-k);
+		if(k==40)
+        {
+		printf("try again!"); 
+		 ifclear = 0;
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+		toquit4 = 1;
+		}
+    	}
+	
+}
+void outcome5(void)
+{
+    
+	int a=0;  //幾A的A 
+    int b=0;  //幾B的B 
+    int i,j;  //迴圈專用 
+  if(k<=10)
+    {
+   for(i=0;i<4;i++){  //使用兩個for，裡面的if作16次 
+        for(j=0;j<4;j++){
+            if(*(a_int+i)==*(q+j)){  //先判斷有沒有遇到相同的數字 
+                if(i==j){  //如果遇到相同的數字，再判斷是不是在相同的位置 
+                    a++;  //相同數字且相同位置，那麼就得到一個A 
+                }else{  //相同數字但沒有想同位置，那麼就得到一個B 
+                    b++;
+                }
+            }
+        }
+    }
+       
+    if(a==4){  //如果有4A代表使用者過關了！
+        printf("恭喜恭喜！你答對了！\n");
+        ifclear = 1;  //因為過關了，所以從0變成1 
+        tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit5 = 1;
+	
+    }else{
+        printf("%dA%dB\n",a,b);  //沒過關，那就顯示幾A幾B 
+        printf("剩餘%d次",35-k);
+		if(k==35)
+        {
+		printf("try again!"); 
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit5 = 1;
+        ifclear = 0;
+		}
+    	}
+	}
+}
+void outcome6(void)
+{
+    
+	int a=0;  //幾A的A 
+    int b=0;  //幾B的B 
+    int i,j;  //迴圈專用 
+   
+    for(i=0;i<4;i++){  //使用兩個for，裡面的if作16次 
+        for(j=0;j<4;j++){
+            if(*(a_int+i)==*(q+j)){  //先判斷有沒有遇到相同的數字 
+                if(i==j){  //如果遇到相同的數字，再判斷是不是在相同的位置 
+                    a++;  //相同數字且相同位置，那麼就得到一個A 
+                }else{  //相同數字但沒有想同位置，那麼就得到一個B 
+                    b++;
+                }
+            }
+        }
+    }
+    
+    if(a==4){  //如果有4A代表使用者過關了！
+        printf("恭喜恭喜！你答對了！\n");
+        ifclear = 1;  
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit6 = 1;
+		
+    }else{
+        printf("%dA%dB\n",a,b);  //沒過關，那就顯示幾A幾B 
+        printf("剩餘%d次",30-k);
+		if(k==30)
+        {
+		printf("try again!"); 
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit6 = 1;
+         ifclear = 0;
+		}
+    	
+	}
+}
+void outcome7(void)
+{
+    
+	int a=0;  //幾A的A 
+    int b=0;  //幾B的B 
+    int i,j;  //迴圈專用 
+   
+    for(i=0;i<4;i++){  //使用兩個for，裡面的if作16次 
+        for(j=0;j<4;j++){
+            if(*(a_int+i)==*(q+j)){  //先判斷有沒有遇到相同的數字 
+                if(i==j){  //如果遇到相同的數字，再判斷是不是在相同的位置 
+                    a++;  //相同數字且相同位置，那麼就得到一個A 
+                }else{  //相同數字但沒有想同位置，那麼就得到一個B 
+                    b++;
+                }
+            }
+        }
+    }
+    
+    if(a==4){  //如果有4A代表使用者過關了！
+        printf("恭喜恭喜！你答對了！\n");
+		
+        ifclear = 1; 
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+            toquit7 = 1;
+    }else{
+        printf("%dA%dB\n",a,b);  //沒過關，那就顯示幾A幾B 
+        printf("剩餘%d次",25-k);
+		if(k==25)
+        {
+		printf("try again!"); 
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+			toquit7 = 1;
+			ifclear = 0;
+		}
+    	}
+	
+}
+void outcome8(void)
+{
+    
+	int a=0;  //幾A的A 
+    int b=0;  //幾B的B 
+    int i,j;  //迴圈專用 
+   
+    for(i=0;i<4;i++){  //使用兩個for，裡面的if作16次 
+        for(j=0;j<4;j++){
+            if(*(a_int+i)==*(q+j)){  //先判斷有沒有遇到相同的數字 
+                if(i==j){  //如果遇到相同的數字，再判斷是不是在相同的位置 
+                    a++;  //相同數字且相同位置，那麼就得到一個A 
+                }else{  //相同數字但沒有想同位置，那麼就得到一個B 
+                    b++;
+                }
+            }
+        }
+    }
+    
+    if(a==4){  //如果有4A代表使用者過關了！
+        printf("恭喜恭喜！你答對了！\n");
+        ifclear = 1;  //因為過關了，所以從0變成1 
+        tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+            toquit8 = 1;
+    }else{
+        printf("%dA%dB\n",a,b);  //沒過關，那就顯示幾A幾B 
+        printf("剩餘%d次",20-k);
+		if(k==20)
+        {
+		printf("try again!"); 
+		 ifclear = 0;
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+		toquit8 = 1; 
+		}
+    	}
+	
+}
+void outcome9(void)
+{
+    
+	int a=0;  //幾A的A 
+    int b=0;  //幾B的B 
+    int i,j;  //迴圈專用 
+  
+   for(i=0;i<4;i++){  //使用兩個for，裡面的if作16次 
+        for(j=0;j<4;j++){
+            if(*(a_int+i)==*(q+j)){  //先判斷有沒有遇到相同的數字 
+                if(i==j){  //如果遇到相同的數字，再判斷是不是在相同的位置 
+                    a++;  //相同數字且相同位置，那麼就得到一個A 
+                }else{  //相同數字但沒有想同位置，那麼就得到一個B 
+                    b++;
+                }
+            }
+        }
+    }
+       
+    if(a==4){  //如果有4A代表使用者過關了！
+        printf("恭喜恭喜！你答對了！\n");
+        ifclear = 1;  //因為過關了，所以從0變成1 
+        tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit9 = 1;
+	
+    }else{
+        printf("%dA%dB\n",a,b);  //沒過關，那就顯示幾A幾B 
+		printf("剩餘%d次",15-k);       
+	    if(k==15)
+        {
+		printf("try again!"); 
+		ifclear = 0;
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit9 = 1;
+		}
+    	}
+	
+}
+void outcome10(void)
+{
+    
+	int a=0;  //幾A的A 
+    int b=0;  //幾B的B 
+    int i,j;  //迴圈專用 
+  
+   for(i=0;i<4;i++){  //使用兩個for，裡面的if作16次 
+        for(j=0;j<4;j++){
+            if(*(a_int+i)==*(q+j)){  //先判斷有沒有遇到相同的數字 
+                if(i==j){  //如果遇到相同的數字，再判斷是不是在相同的位置 
+                    a++;  //相同數字且相同位置，那麼就得到一個A 
+                }else{  //相同數字但沒有想同位置，那麼就得到一個B 
+                    b++;
+                }
+            }
+        }
+    }
+       
+    if(a==4){  //如果有4A代表使用者過關了！
+        printf("恭喜恭喜！你答對了！\n");
+        ifclear = 1;  //因為過關了，所以從0變成1 
+        tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit10 = 1;
+	
+    }else{
+        printf("%dA%dB\n",a,b);  //沒過關，那就顯示幾A幾B 
+        printf("剩餘%d次",10-k);
+		if(k==10)
+        {
+		printf("try again!"); 
+		ifclear = 0;
+		tocontinue = 0;  //這裡一樣，看上面的main就知道為什麼了！ 
+        toquit10 = 1;
+		}
+    	}
+	
+}
